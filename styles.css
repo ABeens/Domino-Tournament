@@ -1,0 +1,144 @@
+/*Body*/
+*{
+	padding: 0 !important;
+	margin: 0;
+	font-size: 1rem;
+}
+/*BANNER*/
+.myBanner{
+	background-color:rgba(192, 0, 0);
+	width: 100%;
+	height: 200px; 
+	text-align: center;
+	vertical-align: center;
+	color: white;
+	font-size: 2rem;
+}
+
+.myBanner img {
+	position: absolute; /* defaults to top:0, left:0 and so these can be left out */
+	top:0;
+	left: 0;
+    height: 200px; /* hiding text, prevent it peaking out */
+    width: 90%; /* 686px; fill the parent element */
+}
+
+/*Banner font*/
+.myBanner div {
+	font-size: 40px;
+	font-family: 'Matura MT Script Capitals', arial;
+	margin: auto;
+	vertical-align: middle;
+}
+
+ html {
+	height: 100%;
+	width: 100%;
+  }
+  
+  body {
+	font-family: sans-serif;
+	margin: 0;
+	height: 100%;
+  }
+  
+  .tournament-container {}
+  
+  .tournament-headers {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-bottom: 1px solid #ccc;
+  }
+  
+  .tournament-brackets {
+	display: flex;
+	flex-direction: row; 
+	list-style-type: none;
+	background: #fdfdfd;
+	margin-bottom: 50px;
+  }
+  
+  .bracket {
+	padding-left: 0;
+	display: flex;
+	margin: 0;
+	padding: 30px 0;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style-type: none;
+	border-right: 1px dashed #ccc;
+	flex: 1;
+  }
+  
+  .team-item {
+	background-color: #f4f4f4;
+	padding: .5rem;
+	display: block;
+	margin: .5rem 10px;
+	position: relative;
+	vertical-align: middle;
+	line-height: 2;
+	text-align: center;
+  }
+  
+  .team-item:after {
+	content:'';
+	border-color: #4f7a38;
+	border-width: 2px;
+	position: absolute;
+	display: block;
+	width: 10px;
+	right: -11px;
+  }
+  
+  .team-item:nth-of-type(odd):after {
+	border-right-style: solid;
+	border-top-style: solid;
+	height: 100%;
+	top: 50%;
+  }
+  
+  .team-item:nth-of-type(even):after {
+	border-right-style: solid;
+	border-bottom-style: solid;
+	height: 100%;
+	top: -50%;
+  }
+
+  .team-item-noborder-end:after{
+	  border-right-style:none !important;
+  }
+
+  .team-item-noborder-end-end:after{
+	border-style:none !important;
+}
+
+  .team-item:before {
+	content:'';
+	border-top: 2px solid #4f7a38;
+	position: absolute;
+	height: 2px;
+	width: 10px;
+	left: -10px;
+	top: 50%;
+  }
+
+  .team-item-firstOne:before {
+	content:'' ;
+	border-top: none !important;
+	position: absolute;
+	height: 2px;
+	width: 10px;
+	left: -10px;
+	top: 50%;
+  }
+  
+  .team-item time {
+	display: inline-block;
+	background-color: #dbdbdb;
+	font-size: .8rem;
+	padding: 0 .6rem;
+  }
